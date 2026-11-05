@@ -1,13 +1,14 @@
 {
-  "name": "jesc-2026-televote",
-  "version": "1.0.0",
+  "name": "jesc-2026-cloudflare-televote",
+  "version": "2.0.0",
   "private": true,
-  "description": "iPhone-friendly JESC fan televote with admin panel; 2-file Railway deploy",
-  "engines": {
-    "node": ">=22.13.0"
-  },
+  "type": "module",
+  "description": "Independent JESC fan televote for Cloudflare Workers with persistent SQLite Durable Object",
   "scripts": {
-    "start": "node server.js"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
   },
-  "license": "UNLICENSED"
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
 }
